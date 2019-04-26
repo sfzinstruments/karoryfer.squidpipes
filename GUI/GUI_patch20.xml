@@ -1,0 +1,60 @@
+<GUI w="775" h="335">
+
+	<!-- One-snare GUI with no stirs -->
+ 
+	<!-- Background -->
+
+	<StaticImage x="0" y="0" w="773" h="333" image="control_bkg_99.png" transparent="0"  />
+	
+
+
+	<!-- Controls - Chiks -->
+	
+	<StaticText x="91" y="85" w="180" h="20" text="GUITAR CHIKS" color_text="#101D0AFF" transparent="1"  />
+
+
+	<StaticText x="126" y="115" w="50" h="20" text="Acoustic" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="71" x="139" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="191" y="115" w="50" h="20" text="Electric" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="72" x="204" y="131" image="Perc_stumpy.png" frames="81"  />
+
+
+
+	<StaticText x="158" y="212" w="50" h="18" text="Tune" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="74" x="168" y="230" image="Perc_knob.png" frames="128"  />
+
+
+
+
+
+	<!-- Controls - Claps -->
+	
+	<StaticText x="452" y="85" w="180" h="20" text="CLAPS" color_text="#101D0AFF" transparent="1"  />
+
+
+	<StaticText x="426" y="115" w="50" h="20" text="Person 1" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="75" x="439" y="131" image="Perc_stumpy.png" frames="81"  />
+
+
+	<StaticText x="486" y="115" w="50" h="20" text="Person 2" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="76" x="499" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="551" y="115" w="50" h="20" text="Person 3" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="78" x="564" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="606" y="115" w="70" h="20" text="Transposed" color_text="#101D0AFF" transparent="1"  />
+	
+	<Knob param="77" x="629" y="131" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="518" y="212" w="50" h="18" text="Tune" color_text="#101D0AFF" transparent="1"   />
+	
+	<Knob param="79" x="528" y="230" image="Perc_knob.png" frames="128"  />
+
+</GUI>                                                                                                                                       

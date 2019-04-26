@@ -1,0 +1,66 @@
+<GUI w="775" h="335">
+ 
+	<!-- StaticImage: Any png file, alpha blended. The image can contain transparency. Place first to allow other elements to show over it -->
+	<StaticImage x="535" y="265" w="240" h="60" image="PlogueLogo.png" transparent="1" />
+	<StaticImage x="383" y="0" w="5" h="330" image="vSeparator.png" />
+	
+	<!-- CommandButton: in this case an empty png file acts as a button to launch a web link (or a local help file if you want to) -->
+	<CommandButton command="launch_url"    data0="http://www.Plogue.com/"   x="535" y="265" w="240" h="60"  image="btn_url.png"   />	
+	
+	<StaticText  x="535" y="245" w="240" h="18"   text="Web link on the logo below" color_text="#CCCCCCFF" />	
+	
+	<!-- INSTRUMENT CONTROLS -->
+	
+	<!-- StaticText: standard VstGui font, anywhere in your UI -->
+	<StaticText x="38" y="37" w="100" h="18" text="Modulation(CC1)" color_text="#FFFFFFFF" />
+	
+	<!-- Knob: The more frames there is, the more accurate the control. Knobman (http://www.g200kg.com/en/software/knobman.html) is a good app
+	to start making your own-->
+	<Knob param="1" x="50" y="60" image="controls_knob.png" frames="200"   />
+	
+	<!-- Non-transparent label: You set your text, background and border colors in hex color code followed by two digits for alpha blending -->
+	<Label param="1" x="10" y="132" w="50" h="18" format="%3.f%%" offset="0" factor="100"   transparent="0" color_text="#B7DE1CFF" color_back="#000000ff" color_border="#FFFFFFFF" />
+	
+	<!-- Transparent label: you can create your own backround as a StaticImage to suit your own design-->
+	<Label param="1" x="60" y="132" w="50" h="18" format="%3.f%%" offset="0" factor="100"   transparent="1"   />
+	
+	<!-- DragLabel:Same as a Label but you can click/drag to chage values-->
+	<DragLabel param="1" x="110" y="132" w="50" h="18" format="%3.f%%" offset="0" factor="100"  color_text="#92c2efFF" color_back="#333333FF" color_border="#555555FF" />
+	
+    <!-- OptionMenu: an advanced UI feature for parameters with fixed increments. In the case ARIA's many LFO waveforms -->
+	
+	<StaticText                x="23"  y="270"  w="120" h="18"  text="This is an <OptionMenu>"  font_size="Small" alignment="center" color_text="#EDEDEDFF" transparent="1"  />		
+	<OptionMenu    param="86"  x="38"  y="290"  w="90" h="18"  font_size="Small" alignment="center" color_text="#EDEDEDFF" transparent="0"  >	
+		<OptionItem name="tri"		    value="0.0" />
+		<OptionItem name="sine"	        value="0.1" />
+		<OptionItem name="ramp up"	    value="0.6" />
+		<OptionItem name="ramp down"    value="0.7" />
+		<OptionItem name="pulse 1/2"    value="0.3" />	
+	</OptionMenu>
+	<StaticText                x="23"  y="308"  w="120" h="18"  text="LFO waveform"  font_size="Small" alignment="center" color_text="#EDEDEDFF" transparent="1"  />		
+
+
+	
+	<StaticText          x="150"  y="217" w="100" h="18" text="Cutoff (CC74)" color_text="#CCCCCCFF" />		
+	<!-- Slider: Can be set horizontal or vertical. image_bg has to be to the exact w and h dimensions -->
+	<Slider param="74"   x="190"  y="37"  w="28" h="170" orientation="vertical" image_handle="fader.png" image_bg="backer_fader.png" />
+	
+	<StaticText          x="240"  y="217" w="100" h="18" text="Resonance (CC71)" color_text="#CCCCCCFF" />
+	<Slider param="71"   x="280"  y="37"  w="28" h="170" orientation="vertical" image_handle="fader.png" image_bg="backer_fader.png" />
+	
+	<Knob param="73" x="450" y="60" image="controls_knob.png" frames="200"   />
+	<Knob param="72" x="580" y="60" image="controls_knob.png" frames="200"   />	
+		
+	<StaticText          x="430"  y="167" w="120" h="18" text="ampeg_attack (CC73)" color_text="#CCCCCCFF" />
+	
+	<!-- NumericTextBox: A label that you can manualy enter your values to edit a parameter -->
+	<NumericTextBox param="73" x="460" y="147" w="55" h="18" format="%1.2f s." alignment="center" transparent="0" color_text="#ccccccff" color_border="#FFFFFF00" />
+	
+	<StaticText          x="560"  y="167" w="120" h="18" text="ampeg_release (CC72)" color_text="#CCCCCCFF" />
+	<NumericTextBox param="72" x="590" y="147" w="55" h="18" format="%1.2f s."  factor="2" alignment="center" transparent="0" color_text="#ccccccff" color_border="#FFFFFF00" />
+	
+	<StaticText          x="650"  y="5" w="120" h="18" text="BD release trigger (CC2)" color_text="#CCCCCCFF" />
+	<!-- OnOffButton: a 2-state cc modulator -->
+	<OnOffButton param="2"  x="690" y="27" w="35" h="35" image="btn_power.png" />
+	
+</GUI>
