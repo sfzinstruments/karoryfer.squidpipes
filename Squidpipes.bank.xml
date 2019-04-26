@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<Key>03B7ECE15DAE1E14A102B4D737B4E6813F9C4D189BE1072B83CB439F483165A3AAC123F6130A53F9D1FFEA881BAE6150FD80EEB3646C94AEB0A89F122AA5DD61FEB6FA64F63B483EA167199CD3330600FEB1A2A77E79386B5E70483898DEAFDCF6D2FE0825BCE20F76C56F9D16CCA0F59735D33F954ADF6EF896B861C8B121F7D40C590132DF3840853EC0F269F509291F60934646EA8E38C2E6AEEFDD0ABC53F822410B16A1FCF1B9380C00F308F439AAD59E11E9231C9ACDF34FDED143B33EE3188C2C1D28D2E3867CE4DCBF2903217E69522D7705A43F488957046062137B4C84000BB2A028F55216D551912D54CC9792D2AFF3350D9181FAB177849B290A</Key>
+<AriaBank id="2524" name="Squidpipes" vendor="Karoryfer" product="Squidpipes" version="1000" >
+
+	<Define name="$sample_dir" value="../Samples"/>
+	
+	<!-- branding for Aria Player and sforzando UIs -->
+	<AriaGUI path="GUI/aria_info.xml"  target="*ARIA_INFO" />	
+ 
+	<AriaProgram name="01-Squidpipes" gui="GUI/01-squidpipes.xml"> <AriaElement path="Programs/01-squidpipes.sfz"/> </AriaProgram>
+	<AriaProgram name="02-Squidotron" gui="GUI/02-squidotron.xml"> <AriaElement path="Programs/02-squidotron.sfz"/> </AriaProgram>
+	<AriaProgram name="03-Squyth"     gui="GUI/03-squynth.xml">    <AriaElement path="Programs/03-squynth.sfz"/>    </AriaProgram>
+
+</AriaBank>
